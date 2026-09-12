@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Organic",
+    "description": "Compostable organic matter, food scraps, yard waste."
+  },
+  {
+    "id": 2,
+    "name": "Paper",
+    "description": "Clean paper, cardboard, newsprint."
+  },
+  {
+    "id": 3,
+    "name": "Plastic",
+    "description": "Clean recyclable plastics, bottles, containers."
+  },
+  {
+    "id": 4,
+    "name": "Glass",
+    "description": "Clean glass bottles and jars."
+  },
+  {
+    "id": 5,
+    "name": "Metal",
+    "description": "Aluminum cans, tin cans, foil."
+  },
+  {
+    "id": 6,
+    "name": "E-Waste",
+    "description": "Electronic devices, batteries, cables, circuit boards."
+  },
+  {
+    "id": 7,
+    "name": "Hazardous",
+    "description": "Chemicals, paints, motor oil, fluorescent tubes."
+  },
+  {
+    "id": 8,
+    "name": "Sanitary",
+    "description": "Diapers, feminine hygiene products, medical masks."
+  },
+  {
+    "id": 9,
+    "name": "Recyclable Mixed Material",
+    "description": "Tetra paks, complex recyclable packaging."
+  },
+  {
+    "id": 10,
+    "name": "Other/Unknown",
+    "description": "Items that do not fit standard categories or cannot be identified."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "item": "banana peel",
+    "category": "Organic",
+    "handling": "Collect in a compost bin or green waste container.",
+    "disposal_guidance": "Dispose of in municipal green bins or home compost systems. Do not enclose in plastic bags unless they are certified compostable.",
+    "safety_warning": "None. Keep covered to avoid attracting pests.",
+    "source": "Prototype knowledge base",
+    "verification": "Needs local/official-source verification",
+    "last_verified": "2026-09-12"
+  },
+  {
+    "item": "plastic bottle",
+    "category": "Plastic",
+    "handling": "Empty all liquids and lightly rinse.",
+    "disposal_guidance": "Place in the blue recycling bin. Caps can usually be left on, but check local regulations.",
+    "safety_warning": "None.",
+    "source": "Prototype knowledge base",
+    "verification": "Needs local/official-source verification",
+    "last_verified": "2026-09-12"
+  },
+  {
+    "item": "glass bottle",
+    "category": "Glass",
+    "handling": "Empty liquids and gently rinse. Do not break the glass.",
+    "disposal_guidance": "Place in the designated glass recycling bin. Sort by color if required by your municipality.",
+    "safety_warning": "Handle with care to avoid breakage and cuts.",
+    "source": "Prototype knowledge base",
+    "verification": "Needs local/official-source verification",
+    "last_verified": "2026-09-12"
+  },
+  {
+    "item": "old mobile phone",
+    "category": "E-Waste",
+    "handling": "Factory reset the device to remove personal data before disposal.",
+    "disposal_guidance": "Take to a certified e-waste recycling center or retail drop-off location. Do NOT throw in regular trash.",
+    "safety_warning": "Contains heavy metals and a lithium battery. High risk of fire if crushed in a garbage truck.",
+    "source": "Prototype knowledge base",
+    "verification": "Needs local/official-source verification",
+    "last_verified": "2026-09-12"
+  },
+  {
+    "item": "battery",
+    "category": "E-Waste",
+    "handling": "Store in a cool, dry place. Tape terminals with clear tape to prevent short circuits.",
+    "disposal_guidance": "DO NOT throw in regular trash or recycling. Take to a designated e-waste drop-off or hazardous waste facility.",
+    "safety_warning": "High risk of fire if punctured, crushed, or exposed to high heat.",
+    "source": "Prototype knowledge base",
+    "verification": "Needs local/official-source verification",
+    "last_verified": "2026-09-12"
+  },
+  {
+    "item": "paper",
+    "category": "Paper",
+    "handling": "Keep dry and clean. Remove any plastic wrapping or non-paper bindings.",
+    "disposal_guidance": "Place in the paper recycling bin. If soiled with food or grease, it must go in compost or trash.",
+    "safety_warning": "None.",
+    "source": "Prototype knowledge base",
+    "verification": "Needs local/official-source verification",
+    "last_verified": "2026-09-12"
+  }
+]
