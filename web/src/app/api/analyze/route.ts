@@ -43,14 +43,23 @@ function tokenize(text: string): Set<string> {
 }
 
 function retrieveRules(query: string) {
+  // Use path relative to this file so it works both locally and on Vercel
   const filePath = path.join(process.cwd(), 'data', 'disposal_rules.json');
+  const altFilePath = path.join(__dirname, '..', '..', '..', '..', 'data', 'disposal_rules.json');
   let rules = [];
   try {
-    const data = fs.readFileSync(filePath, 'utf-8');
+    const targetPath = require('fs').existsSync(filePath) ? filePath : altFilePath;
+    const data = fs.readFileSync(targetPath, 'utf-8');
     rules = JSON.parse(data);
   } catch (e) {
     console.error("Failed to load disposal_rules.json", e);
-    return [];
+    // Return built-in fallback rules so app never fully fails
+    rules = [
+      { item: "banana peel", category: "Organic", disposal_guidance: "Place in green waste / compost bin.", handling: "Keep covered to avoid pests.", safety_warning: "None.", source: "Built-in fallback", verification: "Prototype knowledge base" },
+      { item: "plastic bottle", category: "Plastic", disposal_guidance: "Empty, rinse, place in blue recycling bin.", handling: "Remove caps if required locally.", safety_warning: "None.", source: "Built-in fallback", verification: "Prototype knowledge base" },
+      { item: "battery", category: "E-Waste", disposal_guidance: "DO NOT throw in regular trash. Take to a certified e-waste drop-off.", handling: "Tape terminals to prevent short circuits.", safety_warning: "High fire risk if punctured or crushed.", source: "Built-in fallback", verification: "Prototype knowledge base" },
+      { item: "glass bottle", category: "Glass", disposal_guidance: "Place in glass recycling bin. Sort by color if required.", handling: "Handle with care — risk of breakage and cuts.", safety_warning: "Do not break glass.", source: "Built-in fallback", verification: "Prototype knowledge base" },
+    ];
   }
 
   const queryTokens = tokenize(query);
